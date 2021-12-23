@@ -1,9 +1,11 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import useFetch from './hooks/useFetch';
-
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './containers/HomePage/HomePage';
+import Header from './components/Header/Header';
+// import useFetch from './hooks/useFetch';
 function App() {
-  const [teams, setTeams] = useState();
+  // const [teams, setTeams] = useState();
   // const { error, clearError, isLoading, sendRequest } = useFetch();
 
   // useEffect(() => {
@@ -17,11 +19,12 @@ function App() {
   // }, [sendRequest, teams])
 
   return (
-    <div className="App">
-      <div>
-        hi
-      </div>
-    </div>
+    <Routes>
+      <Route path='/' element={<HomePage />}></Route>
+      <Route path='/teams' element={<div><Header /></div>}></Route>
+      <Route path='/fixtures' element={<div><Header />fixtures</div>}></Route>
+      <Route path='/seasons' element={<div><Header />seasons</div>}></Route>
+    </Routes>
   );
 }
 
