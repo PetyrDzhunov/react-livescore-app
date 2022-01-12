@@ -1,0 +1,26 @@
+.aside-top-leagues {
+    border: 1px solid #549F93;
+    width: max-content;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.aside-top-leagues__list {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px;
+    margin: 6px;
+}
+
+.aside-top-league__NavLink {
+    list-style: none;
+}
+
+.active {
+    color: #FFA630;
+    font-size: bolder;
+}
