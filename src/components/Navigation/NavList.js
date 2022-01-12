@@ -9,7 +9,7 @@ const NavList = () => {
 			</li>
 
 			<li className='nav-list__item'>
-				<NavLink className={(navData) => navData.isActive ? "active nav-list__link" : "nav-list__link"} activeClassName to='/fixtures'>Fixtures</NavLink>
+				<NavLink className={(navData) => navData.isActive ? "active nav-list__link" : "nav-list__link"} to='/fixtures'>Fixtures</NavLink>
 			</li>
 
 			<li className='nav-list__item'>

@@ -1,18 +1,18 @@
+import { useEffect, useState } from 'react';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import AsideTopLeagues from "../../components/AsideTopLeagues/AsideTopLeagues";
+import League from './League';
 
 const HomePage = () => {
-
 
 	return (
 		<PageWrapper>
 			<Header />
 			<main>
 				<AsideTopLeagues />
-				// show the chosen from the aside menu league or a default one
-
+				<League />
 			</main>
 			<Footer />
 		</PageWrapper>

@@ -1,0 +1,19 @@
+.league-table {
+    text-align: center;
+    margin: 16px auto;
+    border: solid 1px white;
+}
+
+.league-table thead {
+    background-color: #549F93;
+    margin: 12px;
+    padding: 12px;
+}
+
+.league-table td,
+.league.table tr {
+    margin: 6px;
+    padding: 6px;
+    color: white;
+    border-bottom: 1px solid white;
+}
