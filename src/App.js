@@ -2,7 +2,9 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './containers/HomePage/HomePage';
-import Header from './components/Header/Header';
+import TeamsPage from './containers/TeamsPage/TeamsPage';
+import SeasonsPage from './containers/SeasonsPage/SeasonsPage';
+import FixturePage from './containers/FixturesPage/FixturePage';
 // import useFetch from './hooks/useFetch';
 function App() {
   // const [teams, setTeams] = useState();
@@ -21,9 +23,9 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<HomePage />}></Route>
-      <Route path='/teams' element={<div><Header /></div>}></Route>
-      <Route path='/fixtures' element={<div><Header />fixtures</div>}></Route>
-      <Route path='/seasons' element={<div><Header />seasons</div>}></Route>
+      <Route path='/teams' element={<TeamsPage />}></Route>
+      <Route path='/fixtures' element={<FixturePage />}></Route>
+      <Route path='/seasons' element={<SeasonsPage />}></Route>
     </Routes>
   );
 }
