@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import AsideTopLeagues from "../../components/AsideTopLeagues/AsideTopLeagues";
 import League from './League';
+
+import { useParams } from "react-router-dom";
 
 const HomePage = () => {
 
@@ -14,6 +15,7 @@ const HomePage = () => {
 				<AsideTopLeagues />
 				<League />
 			</main>
+
 			<Footer />
 		</PageWrapper>
 	);

@@ -2,12 +2,14 @@
     text-align: center;
     margin: 16px auto;
     border: solid 1px white;
+    width: 50vw;
 }
 
 .league-table thead {
     background-color: #549F93;
     margin: 12px;
     padding: 12px;
+    border: solid 1px white;
 }
 
 .league-table td,
