@@ -19,3 +19,15 @@
     color: white;
     border-bottom: 1px solid white;
 }
+
+.win {
+    color: rgb(25, 199, 25);
+}
+
+.draw {
+    color: rgb(231, 231, 17);
+}
+
+.lost {
+    color: rgb(245, 31, 31);
+}
