@@ -1,0 +1,28 @@
+#league-logo {
+    width: 120px;
+    height: 60px;
+}
+
+#teams-parent {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.league-tableRow {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: solid 1px white;
+    justify-content: space-evenly;
+}
+
+.league-tableRow td,
+.league-tableRow div {
+    border: none;
+}
+
+.special-tableRow {
+    display: block;
+    padding: 4px;
+    margin: 8px;
+    font-size: bolder;
+}
