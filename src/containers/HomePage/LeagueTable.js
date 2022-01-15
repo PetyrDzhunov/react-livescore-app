@@ -11,7 +11,7 @@ const LeagueTable = () => {
 	const { error, clearError, isLoading, sendRequest } = useFetch();
 	const { league: leagueClicked } = useParams();
 
-	const id = getLeagueByName(leagueClicked);
+	const id = getLeagueByName(leagueClicked) || 39;
 
 
 	useEffect(() => {
@@ -55,11 +55,11 @@ const LeagueTable = () => {
 								<td>{team.all.goals.for} : {team.all.goals.against}</td>
 								<td>{team.points}</td>
 								<td>{team.form.split().map((result, index) => <div key={index}>{result.split("").map((char, index) => (
-									<>{char === "W"
+									<React.Fragment key={index}>	{char === "W"
 										? <span key={index} className='win'>{char}</span>
 										: char === "L"
 											? <span key={index} className='lost'>{char}</span>
-											: <span key={index} className='draw'>{char}</span>}</>))}
+											: <span key={index} className='draw'>{char}</span>}</React.Fragment>))}
 								</div>
 								)}</td>
 							</tr>
